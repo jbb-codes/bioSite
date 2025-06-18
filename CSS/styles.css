@@ -12,3 +12,59 @@ ul {
   padding: 0;
   border: 0;
 }
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+}
+
+.tab-desk {
+  display: none;
+}
+
+/* Style rules for header area */
+header h1 {
+  text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: gray;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+/* Style rules for hero section */
+#hero-img-section img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for main content */
+main p:first-child {
+  font-size: 2em;
+  text-align: center;
+}
+
+main img {
+  max-width: 100%;
+}
+
+/* Style rules for footer */
+footer {
+  text-align: center;
+}
