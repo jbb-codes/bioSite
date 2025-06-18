@@ -1,0 +1,14 @@
+/*
+  Student Name: Jarren Bess
+  File Name: styles.css
+  Date: June 17, 2025
+ */
+
+/* CSS Reset */
+body,
+header,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
