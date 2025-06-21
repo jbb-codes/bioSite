@@ -14,8 +14,7 @@ img,
 h1,
 h3,
 ul,
-img,
-p {
+img {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,8 +38,6 @@ body {
 
 /* Style rules for header area */
 header {
-  /* background-color: #6893ef; */
-  /* background: linear-gradient(to bottom right, #6893ef, #2554ba); */
   background: linear-gradient(to bottom right, #e5696b, #df1919);
 }
 
@@ -96,11 +93,11 @@ nav li a:active {
 }
 
 #hero-img-section h3 {
+  animation: bounce 1s ease-in alternate infinite;
   position: absolute;
-  z-index: 1;
   top: 73%;
   left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
   font-size: 4.7vw;
   text-wrap: nowrap;
   color: rgb(234, 226, 226);
@@ -143,14 +140,14 @@ main img {
   margin: auto;
 }
 
-.indoor-climb-img{
+.indoor-climb-img {
   display: block;
   width: 80vw;
   margin: 0 auto 40px auto;
   border-radius: 30px;
 }
 
-/* Style rules for footer */
+/* Style rules for footer content */
 footer {
   padding: 2rem;
   background-color: #24262d;
@@ -158,7 +155,7 @@ footer {
   color: white;
 }
 
-footer p:first-of-type{
+footer p:first-of-type {
   margin-bottom: 20px;
 }
 
@@ -167,8 +164,51 @@ footer a {
   text-decoration: none;
 }
 
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 767px) {
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    display: inline-block;
+    border-top: none;
+  }
+}
+
+
+
 /* Add to desktop for hover effect */
 /* nav li a:hover {
   color: white;
   transform: scale(1.1);
 } */
+
+
+/* I Google searched "keyframes with transform messes up absolute position center" and the search AI overview explained
+to keep the absolutely positioned element centered the transform offset of 50% needs to be included within the
+keyframes declaration of the transform property
+This was the code snippet example:
+@keyframes rotateAndCenter {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  } */
+
+  /* Keyframes animation to bounce the #hero-img-section h3 element */
+  @keyframes bounce {
+    from {
+      transform: translate(-50%, -10px);
+    }
+    to {
+      transform: translate(-50%);
+    }
+  }
