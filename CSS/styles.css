@@ -20,20 +20,16 @@ img {
   border: 0;
 }
 
+/* Style rules for all elements */
+* {
+  box-sizing: border-box;
+}
+
 /* Style rules for mobile viewport */
 
 /* Style rules for body */
 body {
   background-color: #2c2e37;
-}
-
-/* Style rules to show mobile class and hide tab-desk class */
-.mobile {
-  display: block;
-}
-
-.tab-desk {
-  display: none;
 }
 
 /* Style rules for header area */
@@ -43,7 +39,7 @@ header {
 
 header h1 {
   font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: clamp(2rem, 10vw, 5rem);
+  font-size: clamp(3rem, 10vw, 6rem);
   text-align: center;
   padding: 2%;
 }
@@ -93,7 +89,7 @@ nav li a:active {
 }
 
 #hero-img-section h3 {
-  animation: bounce 1s ease-in alternate infinite;
+  animation: bounce 2s ease-in alternate infinite;
   position: absolute;
   top: 73%;
   left: 50%;
@@ -111,12 +107,13 @@ nav li a:active {
 #hero-img-section img {
   width: 100%;
   display: block;
+  margin-bottom: 50px;
 }
 
 /* Style rules for main content */
-main p:first-child {
-  font-size: 3em;
-  margin: 40px 30px 20px 30px;
+main p:first-of-type {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 0;
   font-family: "Michroma", sans-serif;
   text-align: center;
   color: #f1e9dd;
@@ -124,6 +121,13 @@ main p:first-child {
 
 main img {
   width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+  gap: 20px;
 }
 
 .profile-img {
@@ -143,13 +147,14 @@ main img {
 .indoor-climb-img {
   display: block;
   width: 80vw;
-  margin: 0 auto 40px auto;
+  margin: auto;
   border-radius: 30px;
 }
 
 /* Style rules for footer content */
 footer {
   padding: 2rem;
+  margin-top: 40px;
   background-color: #24262d;
   text-align: center;
   color: white;
@@ -166,30 +171,32 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 767px) {
-  /* Tablet Viewport: Show tab-desk class, hide mobile class */
-  .tab-desk {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
-
   /* Tablet Viewport: Style rules for nav area */
   nav li {
     display: inline-block;
     border-top: none;
   }
+
+  /* Tablet Viewport: Style rules for main area */
+  .grid{
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  /* Tablet Viewport: Style rules for main area */
+  .profile-img {
+    max-width: 30vw;
+  }
+
+  .indoor-climb-img {
+    max-width: 30vw;
+  }
 }
-
-
 
 /* Add to desktop for hover effect */
 /* nav li a:hover {
   color: white;
   transform: scale(1.1);
 } */
-
 
 /* I Google searched "keyframes with transform messes up absolute position center" and the search AI overview explained
 to keep the absolutely positioned element centered the transform offset of 50% needs to be included within the
@@ -203,12 +210,12 @@ This was the code snippet example:
     transform: translate(-50%, -50%) rotate(360deg);
   } */
 
-  /* Keyframes animation to bounce the #hero-img-section h3 element */
-  @keyframes bounce {
-    from {
-      transform: translate(-50%, -10px);
-    }
-    to {
-      transform: translate(-50%);
-    }
+/* Keyframes animation to bounce the #hero-img-section h3 element */
+@keyframes bounce {
+  from {
+    transform: translate(-50%, -5px);
   }
+  to {
+    transform: translate(-50%);
+  }
+}
