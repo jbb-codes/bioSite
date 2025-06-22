@@ -20,61 +20,62 @@
 </head>
 
 <body>
-  <!-- Use the header area to add header content to the webpage -->
-  <header>
-    <h1>DOM.com</h1>
-  </header>
-
-  <!-- Use the nav area to add navigation links to the webpage -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="hobby.html">Hobbies</a></li>
-    </ul>
-  </nav>
-
-  <!-- Section for the hero image -->
-  <section id="hero-img-section">
-    <h3>CODER. CLIMBER. FIGHTER.</h3>
-
-    <!-- I used the Google AI overview response for a reference but did not copy and paste so not sure if I need to include this link.
-    One of the links referenced by the AI overview https://cloudfour.com/thinks/responsive-images-101-part-6-picture-element/ -->
-    <!-- Create responsive images with art direction using picture element -->
-    <picture>
-      <source media="(max-width: 767px)" srcset="/images/small-hero.png">
-      <source media="(min-width 768px)" srcset="/images/large-hero.png">
-      <img src="images/large-hero.png" alt="Dom's victory pose in cage after winner announcement of Kickboxing match.">
-    </picture>
-    <!-- <img src="images/vh2.png" alt="Dom's victory pose in cage after winner announcement of Kickboxing fight."> -->
-  </section>
-
-  <!-- Use the main area to add the main content to the webpage -->
-  <main>
-    <div class="grid">
-      <img class="profile-img" src="images/Screenshot 2025-06-19 at 23.23.15.png" alt="Dom dressed nicely standing.">
-      <p>Dominic P.</p>
-      <p class="text-overview">
-        This is Dominic he is goal oriented and has achieved several goals that he set out to accomplish. After
-        graduating
-        high-school he pursued a degree in Computer Science which he has completed and went on to work as a Software
-        Developer.
-        Since he started his career he continued to develop his skill sets and has since moved to the position of Senior
-        Software Developer. It is apparent that he has so far led a successful career and seeks to continue his career
-        growth by
-        continuing to challenge himself to learn and improve. On another note Dominic, or Dom for short, has several
-        interesting
-        hobbies from mixed martial arts to studying Japanese.
-      </p>
-      <img class="indoor-climb-img" src="images/indoor-climb.png" alt="Dom climbing on wall indoor bouldering.">
-    </div>
-  </main>
-
-  <!-- Use the footer area to add footer content to the webpage -->
-  <footer>
-    <p>&copy; Copyright 2025. All Rights Reserved.</p>
-    <p><a href="mailto:contact@contact.com">contact@contact.com</a></p>
-  </footer>
+  <div id="wrapper">
+    <!-- Use the header area to add header content to the webpage -->
+    <header>
+      <h1>DOM.com</h1>
+    </header>
+    <!-- Use the nav area to add navigation links to the webpage -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
+      </ul>
+    </nav>
+    <!-- Section for the hero image -->
+    <section id="hero-img-section">
+      <h3>CODER. CLIMBER. FIGHTER.</h3>
+      <!-- I used the Google AI overview response for a reference but did not copy and paste so not sure if I need to include this link.
+      One of the links referenced by the AI overview https://cloudfour.com/thinks/responsive-images-101-part-6-picture-element/ -->
+      <!-- Create responsive images with art direction using picture element -->
+      <picture>
+        <source media="(max-width: 767px)" srcset="/images/small-hero.png">
+        <source media="(min-width 768px)" srcset="/images/large-hero.png">
+        <img src="images/large-hero.png"
+          alt="Dom's victory pose in cage after winner announcement of Kickboxing match.">
+      </picture>
+      <!-- <img src="images/vh2.png" alt="Dom's victory pose in cage after winner announcement of Kickboxing fight."> -->
+    </section>
+    <!-- Use the main area to add the main content to the webpage -->
+    <main>
+      <div class="grid row1">
+        <img class="profile-img" src="images/Screenshot 2025-06-19 at 23.23.15.png" alt="Dom dressed nicely standing.">
+        <p class="name-text">Dominic P.</p>
+      </div>
+      <div class="grid row2">
+        <p class="text-overview">
+          This is Dominic he is goal oriented and has achieved several goals that he set out to accomplish. After
+          graduating
+          high-school he pursued a degree in Computer Science which he has completed and went on to work as a Software
+          Developer.
+          Since he started his career he continued to develop his skill sets and has since moved to the position of
+          Senior
+          Software Developer. It is apparent that he has so far led a successful career and seeks to continue his career
+          growth by
+          continuing to challenge himself to learn and improve. On another note Dominic, or Dom for short, has several
+          interesting
+          hobbies from mixed martial arts to studying Japanese.
+        </p>
+        <img class="indoor-climb-img" src="images/indoor-climb.png" alt="Dom climbing on wall indoor bouldering.">
+      </div>
+    </main>
+    <!-- Use the footer area to add footer content to the webpage -->
+    <footer>
+      <p>&copy; Copyright 2025. All Rights Reserved.</p>
+      <p><a href="mailto:contact@contact.com">contact@contact.com</a></p>
+    </footer>
+  </div>
 </body>
 
 </html>
