@@ -34,7 +34,8 @@ body {
 
 /* Style rules for header area */
 header {
-  background: linear-gradient(to bottom right, #e5696b, #df1919);
+  /* background-color: rgb(43, 40, 40); */
+  background: linear-gradient(to bottom right, #4a4c55, #23262e);
 }
 
 header h1 {
@@ -42,6 +43,7 @@ header h1 {
   font-size: clamp(3rem, 10vw, 6rem);
   text-align: center;
   padding: 2%;
+  color: #f1e9dd;
 }
 
 header h3 {
@@ -50,7 +52,7 @@ header h3 {
 
 /* Style rules for navigation area */
 nav {
-  background-color: #2c2e37;
+  background-color: rgb(121, 18, 18);
 }
 
 nav ul {
@@ -60,17 +62,17 @@ nav ul {
 
 nav li {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: "Michroma", sans-serif;
-  border-top: solid 0.5px #f1e9dd;
+  border-top: solid 0.5px #24262d;
 }
 
 nav li a {
   display: block;
   text-decoration: none;
-  color: #f1e9dd;
-  padding: 0.5em 2em;
+  color: rgb(224, 221, 221);
+  padding: 0.5rem 2rem;
 }
 
 nav li:first-child {
@@ -110,43 +112,46 @@ nav li a:active {
   margin-bottom: 50px;
 }
 
-/* Style rules for main content */
-main p:first-of-type {
-  font-size: clamp(2rem, 5vw, 4rem);
+/* Style rules for main content area*/
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 40px;
+}
+
+.row1 {
+  background-color: #24262d;
+  padding: 30px;
+}
+
+.row2 {
+  background-color: #2c2e37;
+  padding: 30px;
+}
+
+.profile-img {
+  display: block;
+  width: 70vw;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.name-text {
+  font-size: clamp(1.7rem, 7vw, 5rem);
   margin: 0;
   font-family: "Michroma", sans-serif;
   text-align: center;
   color: #f1e9dd;
 }
 
-main img {
-  width: 100%;
-}
-
-.grid {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  align-items: center;
-  gap: 20px;
-}
-
-.profile-img {
-  border-radius: 50px;
-  width: 70vw;
-  display: block;
-  margin: auto;
-}
-
 .text-overview {
   color: #f1e9dd;
-  padding: 25px 20px;
   text-align: justify;
-  margin: auto;
 }
 
 .indoor-climb-img {
   display: block;
-  width: 80vw;
+  width: 75vw;
   margin: auto;
   border-radius: 30px;
 }
@@ -158,10 +163,6 @@ footer {
   background-color: #24262d;
   text-align: center;
   color: white;
-}
-
-footer p:first-of-type {
-  margin-bottom: 20px;
 }
 
 footer a {
@@ -178,13 +179,23 @@ footer a {
   }
 
   /* Tablet Viewport: Style rules for main area */
-  .grid{
-    grid-template: 1fr 1fr / 1fr 1fr;
+  .grid {
+    grid-template: 1fr / 1fr 1fr;
+    gap: 20px;
   }
 
-  /* Tablet Viewport: Style rules for main area */
   .profile-img {
     max-width: 30vw;
+  }
+
+  .name-text {
+    align-self: center;
+    font-size: 5vw;
+  }
+
+  .text-overview{
+    align-self: center;
+    padding-left: 4vw;
   }
 
   .indoor-climb-img {
@@ -192,11 +203,47 @@ footer a {
   }
 }
 
-/* Add to desktop for hover effect */
-/* nav li a:hover {
-  color: white;
-  transform: scale(1.1);
-} */
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px) {
+  /*  Large Desktop Viewport: Style rules for body */
+  body {
+    background-color: #1c1d21;
+  }
+
+  /*  Large Desktop Viewport: Style rules for wrapper div */
+  #wrapper {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: #23262e;
+  }
+
+  /*  Large Desktop Viewport: Style rules for nav area */
+  nav li a {
+    padding: 1rem 80px;
+    font-size: 2rem;
+  }
+
+  /*  Large Desktop Viewport: Style rules for hero image section */
+  #hero-img-section h3 {
+    font-size: 6rem;
+  }
+
+  /*  Large Desktop Viewport: Style rules for main area*/
+  .text-overview {
+    font-size: 2rem;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+  /* Desktop Viewport: Style rules for nav area */
+
+  /* Add to desktop for hover effect */
+  nav li a:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+}
 
 /* I Google searched "keyframes with transform messes up absolute position center" and the search AI overview explained
 to keep the absolutely positioned element centered the transform offset of 50% needs to be included within the
