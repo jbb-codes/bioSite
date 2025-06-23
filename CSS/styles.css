@@ -91,7 +91,6 @@ nav li a:active {
 }
 
 #hero-img-section h3 {
-  animation: bounce 2s ease-in alternate infinite;
   position: absolute;
   top: 73%;
   left: 50%;
@@ -226,6 +225,11 @@ footer a {
   nav li a {
     padding: 1rem 80px;
     font-size: 2rem;
+  }
+
+  /*  Large Desktop Viewport: Style rules for hero image section */
+  #hero-img-section h3 {
+    font-size: 6rem;
   }
 }
 
