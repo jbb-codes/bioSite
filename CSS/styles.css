@@ -227,11 +227,6 @@ footer a {
     padding: 1rem 80px;
     font-size: 2rem;
   }
-
-  /*  Large Desktop Viewport: Style rules for hero image section */
-  #hero-img-section h3 {
-    font-size: 6rem;
-  }
 }
 
 /* Media Query for Desktop Viewport */
