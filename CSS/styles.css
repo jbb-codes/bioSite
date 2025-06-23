@@ -95,7 +95,8 @@ nav li a:active {
   top: 73%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 4.7vw;
+  /* font-size value of 4.7vw works fine but changing to 3vw works for GitHub pages as it does not apply the large desktop viewport media query style for unknown reason */
+  font-size: 3vw;
   text-wrap: nowrap;
   color: rgb(234, 226, 226);
   background-color: rgba(255, 24, 24, 0.55);
@@ -228,6 +229,7 @@ footer a {
   }
 
   /*  Large Desktop Viewport: Style rules for hero image section */
+  /* GitHub pages does not apply this style for some reason so I had to adjust the font-size attribute in the mobile viewport section */
   #hero-img-section h3 {
     font-size: 6rem;
   }
