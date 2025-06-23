@@ -40,9 +40,9 @@ header {
 
 header h1 {
   font-family: "WDXL Lubrifont JP N", sans-serif;
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(3rem, 10vw, 8rem);
   text-align: center;
-  padding: 2%;
+  padding: 1%;
   color: #f1e9dd;
 }
 
@@ -96,12 +96,11 @@ nav li a:active {
   top: 73%;
   left: 50%;
   transform: translateX(-50%);
-  margin: auto;
   font-size: 4.7vw;
   text-wrap: nowrap;
   color: rgb(234, 226, 226);
   background-color: rgba(255, 24, 24, 0.55);
-  padding: 1px 4px 3px 4px;
+  padding: 1px 4px 12px 4px;
   border-radius: 10px;
   font-weight: bolder;
   font-family: "Michroma", sans-serif;
