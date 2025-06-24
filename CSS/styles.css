@@ -90,7 +90,6 @@ nav li a:active {
   position: relative;
 }
 
-/* font-size value of 4.7vw works fine but changing to 3vw works for GitHub pages as it does not apply the large desktop viewport media query style for unknown reason */
 #hero-img-section h3 {
   position: absolute;
   top: 73%;
