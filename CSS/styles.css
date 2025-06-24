@@ -182,6 +182,11 @@ footer a {
     border-top: none;
   }
 
+  /* Tablet Viewport: Style rules for hero image section */
+  #hero-img-section h3 {
+    font-size: 2rem;
+  }
+
   /* Tablet Viewport: Style rules for main area */
   .grid {
     grid-template: 1fr / 1fr 1fr;
@@ -243,5 +248,10 @@ footer a {
   nav li a:hover {
     color: white;
     transform: scale(1.1);
+  }
+
+  /* Desktop Viewport: Style rules for hero image section */
+  #hero-img-section h3 {
+    font-size: 4rem;
   }
 }
