@@ -213,6 +213,22 @@ footer a {
   }
 }
 
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+  /* Desktop Viewport: Style rules for nav area */
+
+  /* Add to desktop for hover effect */
+  nav li a:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+
+  /* Desktop Viewport: Style rules for hero image section */
+  #hero-img-section h3 {
+    font-size: 4rem;
+  }
+}
+
 /* Media Query for Large Desktop Viewport */
 @media screen and (min-width: 1921px) {
   /*  Large Desktop Viewport: Style rules for body */
@@ -237,21 +253,5 @@ footer a {
   /* GitHub pages does not apply this style for some reason so I had to adjust the font-size attribute in the mobile viewport section */
   #hero-img-section h3 {
     font-size: 6rem;
-  }
-}
-
-/* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px) {
-  /* Desktop Viewport: Style rules for nav area */
-
-  /* Add to desktop for hover effect */
-  nav li a:hover {
-    color: white;
-    transform: scale(1.1);
-  }
-
-  /* Desktop Viewport: Style rules for hero image section */
-  #hero-img-section h3 {
-    font-size: 4rem;
   }
 }
