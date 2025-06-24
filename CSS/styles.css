@@ -90,13 +90,13 @@ nav li a:active {
   position: relative;
 }
 
+/* font-size value of 4.7vw works fine but changing to 3vw works for GitHub pages as it does not apply the large desktop viewport media query style for unknown reason */
 #hero-img-section h3 {
   position: absolute;
   top: 73%;
   left: 50%;
   transform: translateX(-50%);
-  /* font-size value of 4.7vw works fine but changing to 3vw works for GitHub pages as it does not apply the large desktop viewport media query style for unknown reason */
-  font-size: 3vw;
+  font-size: clamp(1rem, 4.7vw, 6rem);
   text-wrap: nowrap;
   color: rgb(234, 226, 226);
   background-color: rgba(255, 24, 24, 0.55);
@@ -175,16 +175,11 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   /* Tablet Viewport: Style rules for nav area */
   nav li {
     display: inline-block;
     border-top: none;
-  }
-
-  /* Tablet Viewport: Style rules for hero image section */
-  #hero-img-section h3 {
-    font-size: 2rem;
   }
 
   /* Tablet Viewport: Style rules for main area */
@@ -222,11 +217,6 @@ footer a {
     color: white;
     transform: scale(1.1);
   }
-
-  /* Desktop Viewport: Style rules for hero image section */
-  #hero-img-section h3 {
-    font-size: 4rem;
-  }
 }
 
 /* Media Query for Large Desktop Viewport */
@@ -247,11 +237,5 @@ footer a {
   nav li a {
     padding: 1rem 80px;
     font-size: 2rem;
-  }
-
-  /*  Large Desktop Viewport: Style rules for hero image section */
-  /* GitHub pages does not apply this style for some reason so I had to adjust the font-size attribute in the mobile viewport section */
-  #hero-img-section h3 {
-    font-size: 6rem;
   }
 }
