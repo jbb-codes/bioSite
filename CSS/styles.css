@@ -78,12 +78,6 @@ nav li:first-child {
   border-top: none;
 }
 
-nav li a:active {
-  color: rgb(255, 255, 255);
-  background-color: rgb(52, 54, 57);
-  transform: scale(1.1);
-}
-
 /* Style rules for hero section */
 #hero-img-section {
   position: relative;
@@ -213,6 +207,12 @@ footer a {
   /* Add to desktop for hover effect */
   nav li a:hover {
     color: white;
+    transform: scale(1.1);
+  }
+
+  nav li a:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 54, 57);
     transform: scale(1.1);
   }
 }
