@@ -105,12 +105,6 @@ nav li:first-child {
 }
 
 /* Style rules for main content area*/
-.grid {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 40px;
-}
-
 .row1 {
   background-color: #24262d;
   padding: 30px;
@@ -176,6 +170,7 @@ footer a {
 
   /* Tablet Viewport: Style rules for main area */
   .grid {
+    display: grid;
     grid-template: 1fr / 1fr 1fr;
     gap: 20px;
   }
