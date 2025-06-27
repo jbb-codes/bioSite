@@ -107,20 +107,19 @@ nav li:first-child {
 /* Style rules for main content area*/
 .row1 {
   background-color: #24262d;
-  padding: 30px;
+  padding: 1px 0 10px 0;
 }
 
 .row2 {
   background-color: #2c2e37;
-  padding: 30px;
 }
 
 .profile-img {
   display: block;
   width: 70vw;
-  margin: auto;
+  margin: 30px auto;
   border-radius: 30px;
-  box-shadow: 1px 1px 10px 2px rgba(255, 24, 24, 0.4);
+  box-shadow: 1px 1px 10px 2px rgba(255, 24, 24, 0.4);;
 }
 
 .name-text {
@@ -136,12 +135,13 @@ nav li:first-child {
   text-align: justify;
   line-height: 1.5;
   font-size: 1.2rem;
+  padding: 30px;
 }
 
 .indoor-climb-img {
   display: block;
   width: 75vw;
-  margin: auto;
+  margin: 40px auto 0 auto;
   border-radius: 30px;
   box-shadow: 1px 1px 10px 1px rgba(255, 24, 24, 0.4);
 }
@@ -192,6 +192,7 @@ footer a {
 
   .indoor-climb-img {
     max-width: 30vw;
+    margin: auto;
   }
 }
 
