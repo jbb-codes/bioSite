@@ -101,7 +101,7 @@ nav li:first-child {
 #hero-img-section img {
   width: 100%;
   display: block;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 /* Style rules for main content area*/
@@ -149,7 +149,7 @@ nav li:first-child {
 /* Style rules for footer content */
 footer {
   padding: 2rem;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   background-color: #24262d;
   text-align: center;
   color: white;
