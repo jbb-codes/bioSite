@@ -112,6 +112,7 @@ nav li:first-child {
 
 .row2 {
   background-color: #2c2e37;
+  padding: 30px;
 }
 
 .profile-img {
@@ -119,7 +120,7 @@ nav li:first-child {
   width: 70vw;
   margin: 30px auto;
   border-radius: 30px;
-  box-shadow: 1px 1px 10px 2px rgba(255, 24, 24, 0.4);;
+  box-shadow: 1px 1px 10px 2px rgba(255, 24, 24, 0.4);
 }
 
 .name-text {
@@ -135,7 +136,6 @@ nav li:first-child {
   text-align: justify;
   line-height: 1.5;
   font-size: 1.2rem;
-  padding: 30px;
 }
 
 .indoor-climb-img {
@@ -191,7 +191,7 @@ footer a {
   }
 
   .indoor-climb-img {
-    max-width: 30vw;
+    max-width: 40vw;
     margin: auto;
   }
 }
@@ -208,6 +208,10 @@ footer a {
     color: rgb(255, 255, 255);
     background-color: rgb(52, 54, 57);
     transform: scale(1.1);
+  }
+
+  /* Desktop Viewport: Style rules for main area */
+  .indoor-climb-img {
   }
 }
 
