@@ -149,7 +149,6 @@ nav li:first-child {
 /* Style rules for footer content */
 footer {
   padding: 2rem;
-  /* margin-top: 40px; */
   background-color: #24262d;
   text-align: center;
   color: white;
@@ -191,7 +190,7 @@ footer a {
   }
 
   .indoor-climb-img {
-    max-width: 40vw;
+    width: 40vw;
     margin: auto;
   }
 }
@@ -208,6 +207,11 @@ footer a {
     color: rgb(255, 255, 255);
     background-color: rgb(52, 54, 57);
     transform: scale(1.1);
+  }
+
+  /* Desktop Viewport: Style rules for main area */
+  .indoor-climb-img {
+    width: 30vw;
   }
 }
 
@@ -229,5 +233,10 @@ footer a {
   nav li a {
     padding: 1rem 80px;
     font-size: 2rem;
+  }
+
+  /*  Large Desktop Viewport: Style rules for main area */
+  .indoor-climb-img {
+    width: 20vw;
   }
 }
