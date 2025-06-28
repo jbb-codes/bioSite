@@ -106,7 +106,7 @@ nav li:first-child {
 /* Style rules for main content area*/
 .row1 {
   background-color: #24262d;
-  padding: 1px 0 10px 0;
+  padding: 30px;
 }
 
 .row2 {
@@ -230,9 +230,8 @@ footer a {
     width: 30vw;
   }
 
-  /*  */
   .text-overview {
-    padding-right: 50px;
+    padding: 0 50px;
   }
 }
 
