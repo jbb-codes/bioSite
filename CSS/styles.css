@@ -25,7 +25,7 @@ img {
   box-sizing: border-box;
 }
 
-/* Style rules for mobile viewport */
+/* Mobile Viewport: Style rules for home page */
 
 /* Style rules for body */
 body {
@@ -145,6 +145,7 @@ nav li:first-child {
   box-shadow: 1px 1px 10px 1px rgba(255, 24, 24, 0.4);
 }
 
+/* Mobile Viewport: Style rules for about page */
 .about-img {
   display: block;
   width: 70vw;
@@ -168,6 +169,8 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 768px) {
+  /* Tablet Viewport: Style rules for home page */
+
   /* Tablet Viewport: Style rules for nav area */
   nav li {
     display: inline-block;
@@ -192,7 +195,6 @@ footer a {
 
   .text-overview {
     align-self: center;
-    padding-left: 4vw;
     font-size: 1.2rem;
   }
 
@@ -201,6 +203,9 @@ footer a {
     margin: auto;
   }
 
+  /* Tablet Viewport: Style rules for about page */
+
+  /* Tablet Viewport: Style rules for main area*/
   .about-img {
     width: 40vw;
   }
@@ -223,6 +228,11 @@ footer a {
   /* Desktop Viewport: Style rules for main area */
   .indoor-climb-img {
     width: 30vw;
+  }
+
+  /*  */
+  .text-overview {
+    padding-right: 50px;
   }
 }
 
