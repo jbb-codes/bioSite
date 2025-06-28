@@ -22,10 +22,12 @@
 <body>
   <!-- Wrapper to contain webpage for large desktop viewports -->
   <div id="wrapper">
+
     <!-- Use the header area to add header content to the webpage -->
     <header>
       <h1>DOM.com</h1>
     </header>
+
     <!-- Use the nav area to add navigation links to the webpage -->
     <nav>
       <ul>
@@ -34,6 +36,7 @@
         <li><a href="hobbies.html">Hobbies</a></li>
       </ul>
     </nav>
+
     <!-- Section for the hero image -->
     <div id="hero-img-section">
       <h3>CODER. CLIMBER. FIGHTER.</h3>
@@ -41,20 +44,20 @@
       <!-- I used the Google AI overview response for a reference but did not copy and paste so not sure if I need to include this link.
       One of the links referenced by the AI overview https://cloudfour.com/thinks/responsive-images-101-part-6-picture-element/ -->
 
-      <!-- GitHub pages does not work with the picture element -->
-      <!-- Create responsive images with art direction using picture element -->
+      <!-- GitHub pages does not work with the picture element
+      * This is one of the elements I used that was not covered in the book per the projects additional design requirements
+      Create responsive images with art direction using picture element -->
       <!-- <picture>
         <source media="(max-width: 767px)" srcset="/images/small-hero.png">
-        <source media="(min-width: 768px)" srcset="/images/large-hero.png">
+        <source srcset="/images/large-hero.png">
         <img src="images/large-hero.png"
           alt="Dom's victory pose in cage after winner announcement of Kickboxing match.">
       </picture> -->
 
-
-      <!-- This did correct the issue with GitHub pages not showing the images from the picture element-->
+      <!-- This corrected the issue with GitHub pages not showing the images from the picture element-->
       <img src="images/large-hero.png" alt="Dom's victory pose in cage after winner announcement of Kickboxing match.">
-
     </div>
+
     <!-- Use the main area to add the main content to the webpage -->
     <main>
       <div class="grid row1">
@@ -92,6 +95,7 @@
         <img class="indoor-climb-img" src="images/indoor-climb.png" alt="Dom climbing on wall indoor bouldering.">
       </div>
     </main>
+
     <!-- Use the footer area to add footer content to the webpage -->
     <footer>
       <p>&copy; Copyright 2025. All Rights Reserved.</p>
