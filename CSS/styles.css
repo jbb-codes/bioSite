@@ -260,4 +260,11 @@ footer a {
   .indoor-climb-img {
     width: 20vw;
   }
+
+  /* Large Desktop Viewport: Style rules for about page */
+
+  /* Large Desktop Viewport: Style rules for main area */
+  .about-img {
+    width: 20vw;
+  }
 }
