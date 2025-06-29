@@ -145,13 +145,36 @@ nav li:first-child {
   box-shadow: 1px 1px 10px 1px rgba(255, 24, 24, 0.4);
 }
 
-/* Mobile Viewport: Style rules for about page */
 .about-img {
   display: block;
   width: 70vw;
   margin: 30px auto;
   border-radius: 30px;
   box-shadow: 1px 1px 10px 2px rgba(255, 24, 24, 0.4);
+}
+
+aside {
+  text-align: center;
+  color: rgb(234, 226, 226);
+  margin: auto;
+  max-width: 700px;
+  padding: 30px;
+}
+
+figure {
+  color: rgb(234, 226, 226);
+}
+
+figure img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px 2px rgba(255, 24, 24, 0.4);
+}
+
+figcaption {
+  padding: 2%;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* Style rules for footer content */
@@ -169,8 +192,6 @@ footer a {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 768px) {
-  /* Tablet Viewport: Style rules for home page */
-
   /* Tablet Viewport: Style rules for nav area */
   nav li {
     display: inline-block;
@@ -182,6 +203,10 @@ footer a {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     gap: 20px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
   }
 
   .profile-img {
@@ -203,9 +228,6 @@ footer a {
     margin: auto;
   }
 
-  /* Tablet Viewport: Style rules for about page */
-
-  /* Tablet Viewport: Style rules for main area*/
   .about-img {
     width: 40vw;
   }
@@ -232,6 +254,14 @@ footer a {
 
   .text-overview {
     padding: 0 50px;
+  }
+
+  .gallery {
+    grid-template-columns: auto auto auto;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
   }
 }
 
@@ -260,10 +290,9 @@ footer a {
     width: 20vw;
   }
 
-  /* Large Desktop Viewport: Style rules for about page */
-
-  /* Large Desktop Viewport: Style rules for main area */
   .about-img {
     width: 20vw;
   }
 }
+
+/* TODO: Add media query for print */
