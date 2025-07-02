@@ -236,6 +236,10 @@ footer a {
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px) {
   /* Desktop Viewport: Style rules for nav area */
+  nav li a{
+    padding: 0.5rem 3rem;
+  }
+
   nav li a:hover {
     color: white;
     transform: scale(1.1);
