@@ -31,10 +31,8 @@ body {
 }
 
 /* Style rules for text elements */
-p,
-li,
-h3,
-figcaption {
+/* * This is a pseudo-class I used that was not covered in the book per the projects additional design requirements. */
+:is(p, li, table, figcaption) {
   font-family: "Domine", serif;
   color: #f1e9dd;
 }
