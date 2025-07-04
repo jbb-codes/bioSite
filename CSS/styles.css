@@ -274,6 +274,39 @@ footer a {
   .about-img {
     width: 40vw;
   }
+
+  /* Tablet Viewport: Style rules for table */
+  /* Used styles from book for table with different values  */
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    justify-self: center;
+    margin-top: 10vh;
+  }
+
+  caption {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1%;
+    color: #f1e9dd;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 1%;
+    color: #f1e9dd;
+  }
+
+  th {
+    background-color: rgb(161, 24, 24);
+    font-size: 1.5rem;
+    width: 250px;
+  }
+
+  td {
+    font-size: 1.25rem;
+  }
 }
 
 /* Media Query for Desktop Viewport */
