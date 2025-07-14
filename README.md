@@ -15,18 +15,21 @@ This website was developed as part of the WEB-200 course curriculum, focusing on
 ## Site Structure & Features
 
 ### **Home Page (index.html)**
+
 - **Hero Section**: Dynamic hero image with responsive design featuring Dom's victory pose
 - **Profile Introduction**: Professional headshot and comprehensive overview
 - **Key Highlights**: "CODER. CLIMBER. FIGHTER." - capturing three main points
 - **Personal Story**: Detailed narrative about Dom's journey from computer science student to software engineering specialist
 
 ### **About Page (about.html)**
+
 - **Professional Journey**: Career progression from analyst to senior engineer to specialist
 - **Educational Background**: Computer Science degree from University of William & Mary
 - **Career Goals**: Aspiration to become a software engineering manager
 - **Work Philosophy**: Focus on continuous learning and challenging personal growth
 
 ### **Hobbies Page (hobbies.html)**
+
 - **Martial Arts**: Boxing, kickboxing, and Brazilian Jiu-Jitsu (BJJ) training
 - **Rock Climbing**: Bouldering expertise with rapid skill progression
 - **Language Learning**: Japanese language studies
@@ -36,18 +39,21 @@ This website was developed as part of the WEB-200 course curriculum, focusing on
 ## Technical Implementation
 
 ### **Responsive Design**
+
 - Mobile-first approach with breakpoints at 767px
 - Responsive images using `<picture>` elements with art direction
 - Flexible grid layouts that adapt to different screen sizes
 - Optimized typography scaling across devices
 
 ### **Visual Design**
+
 - **Typography**: Custom Google Fonts (Michroma for headers, WDXL Lubrifont JP N for body text)
 - **Color Scheme**: Professional palette supporting the martial arts/climbing theme
 - **Image Strategy**: High-quality photos showcasing Dom's activities and achievements
 - **Layout**: Clean, modern grid-based design with strategic whitespace
 
 ### **Performance & Accessibility**
+
 - Semantic HTML5 structure
 - Proper alt text for all images
 - Cross-browser compatibility
@@ -83,6 +89,7 @@ bioSite/
 ## Design Philosophy
 
 The bioSite balances professionalism with personality, creating a digital presence that could serve multiple purposes:
+
 - **Professional Portfolio**: Showcasing technical skills and career progression
 - **Personal Brand**: Highlighting unique interests and well-rounded character
 - **Networking Tool**: Providing comprehensive background for professional connections
@@ -91,6 +98,7 @@ The bioSite balances professionalism with personality, creating a digital presen
 ## Future Enhancements
 
 Potential areas for expansion:
+
 - Contact form integration
 - Blog section for ongoing updates
 - Project portfolio gallery
