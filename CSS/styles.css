@@ -364,10 +364,7 @@ footer a {
   }
 
   /*  Large Desktop Viewport: Style rules for main area */
-  .indoor-climb-img {
-    width: 20vw;
-  }
-
+  .indoor-climb-img,
   .about-img {
     width: 20vw;
   }
