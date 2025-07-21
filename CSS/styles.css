@@ -12,6 +12,7 @@ main,
 footer,
 img,
 h1,
+h2,
 h3,
 ul,
 img {
@@ -119,6 +120,14 @@ nav li:first-child {
 }
 
 /* Style rules for main content area*/
+h2 {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-size: clamp(2rem, 5vw, 7rem);
+  text-align: center;
+  padding: 1%;
+  color: #f1e9dd;
+}
+
 .row1 {
   background-color: #24262d;
   padding: 30px;
